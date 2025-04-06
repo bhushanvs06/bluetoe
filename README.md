@@ -13,10 +13,10 @@
 ---
 
 ## Website Link  
-[Visit Bluetoe](https://bluetoe-swarajya-coders.vercel.app/)
-Sample login credentials
-Email id:- some@google.com
-password:- 12345678
+[Visit Bluetoe](https://bluetoe-swarajya-coders.vercel.app/)<br>
+Sample login credentials<br>
+Email id:- some@google.com<br>
+password:- 12345678<br>
 
 ## Demo Video Link  
 [Watch The Video](https://youtu.be/_PLrT0R7pQw)
