@@ -66,9 +66,7 @@ password:- 12345678<br>
 - User-friendly interest-based questionnaire  
 - Suggests suitable career paths based on AI analysis  
 - Covers domains such as:  
-  - 🎮 Games: Minecraft, BGMI, GTA 5  
-  - 🏀 Sports: Football, Cricket, Tennis, Swimming  
-  - 🎨 Creative: Animator, Designer, Editor  
+  - 🎮 Games: Only Minecraft, BGMI for now
 
 ### 3) 📅 Planner & Livebooks  
 - Structured roadmap toward chosen careers  
