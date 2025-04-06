@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/bluetoe/static/css/main.afbb7d18.css",
+    "main.js": "/bluetoe/static/js/main.34f3e3fd.js",
+    "static/js/453.7ff60177.chunk.js": "/bluetoe/static/js/453.7ff60177.chunk.js",
+    "index.html": "/bluetoe/index.html",
+    "main.afbb7d18.css.map": "/bluetoe/static/css/main.afbb7d18.css.map",
+    "main.34f3e3fd.js.map": "/bluetoe/static/js/main.34f3e3fd.js.map",
+    "453.7ff60177.chunk.js.map": "/bluetoe/static/js/453.7ff60177.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.afbb7d18.css",
+    "static/js/main.34f3e3fd.js"
+  ]
+}
