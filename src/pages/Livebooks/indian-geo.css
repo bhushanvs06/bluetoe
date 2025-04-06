@@ -1,0 +1,455 @@
+/* indian-geo.css */
+
+/* Base Styles */
+.indian-geo-container {
+    font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f8fafc;
+    color: #1e293b;
+    line-height: 1.6;
+  }
+  
+  /* Header Styles */
+  .header {
+    background-color: #1e40af;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+  }
+  
+  
+  /* Main Content Layout */
+  .content-container {
+    display: flex;
+    padding: 1.5rem;
+    gap: 2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .content-container {
+      flex-direction: column;
+      padding: 1rem;
+    }
+  }
+  
+  /* Video Learning Section */
+  .video-learning-section {
+    flex: 2;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    background-color: #000;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  .module-navigation {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .module-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #e2e8f0;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    transition: all 0.2s ease;
+  }
+  
+  .module-btn:hover {
+    border-color: #93c5fd;
+  }
+  
+  .module-btn.active {
+    background-color: #1e40af;
+    color: white;
+    border-color: #1e40af;
+  }
+  
+  /* Quiz Section */
+  .quiz-section {
+    flex: 1;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .quiz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .expand-btn {
+    background-color: #e2e8f0;
+    color: #334155;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+  
+  .expand-btn:hover {
+    background-color: #cbd5e1;
+  }
+  
+  .expand-btn svg {
+    width: 14px;
+    height: 14px;
+  }
+  
+  /* Question Cards */
+  .question-card {
+    margin-bottom: 1.5rem;
+    padding: 1.25rem;
+    border-radius: 8px;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+  }
+  
+  .question-text {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #1e293b;
+    font-size: 1.05rem;
+  }
+  
+  .options-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+  }
+  
+  @media (max-width: 500px) {
+    .options-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Option Buttons */
+  .option-btn {
+    padding: 0.75rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: center;
+    font-size: 0.95rem;
+  }
+  
+  .option-btn:hover:not(.correct):not(.wrong) {
+    background-color: #f1f5f9;
+    border-color: #93c5fd;
+  }
+  
+  .option-btn.selected {
+    background-color: #98d9f1;
+    border-color: #000307;
+    color: #000000;
+  }
+  
+  .option-btn.correct {
+    background-color: #dcfce7;
+    border-color: #4ade80;
+    color: #166534;
+  }
+  
+  .option-btn.wrong {
+    background-color: #fee2e2;
+    border-color: #f87171;
+    color: #991b1b;
+  }
+  
+  /* Submit Button */
+  .submit-btn {
+    background-color: #1e40af;
+    color: white;
+    border: none;
+    padding: 0.85rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 1rem;
+    transition: all 0.2s;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .submit-btn:hover {
+    background-color: #1e3a8a;
+    transform: translateY(-1px);
+  }
+  
+  .submit-btn:active {
+    transform: translateY(0);
+  }
+  
+  /* Results Section */
+  .results-section {
+    margin-top: 2rem;
+    animation: fadeIn 0.3s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .score-display {
+    background-color: #1e40af;
+    color: white;
+    padding: 1rem;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+  }
+  
+  .result-card {
+    padding: 1.25rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    border-left: 4px solid transparent;
+  }
+  
+  .result-card.correct {
+    background-color: #f0fdf4;
+    border-left-color: #4ade80;
+  }
+  
+  .result-card.wrong {
+    background-color: #fef2f2;
+    border-left-color: #f87171;
+  }
+  
+  .result-card p {
+    margin: 0.5rem 0;
+  }
+  
+  .result-card strong {
+    color: #1e293b;
+  }
+  
+  /* Utility Classes */
+  .hidden {
+    display: none;
+  }
+  
+  /* Loading Animation */
+  .loading-spinner {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 1s ease-in-out infinite;
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  
+  /* Tooltip for explanations */
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+    margin-left: 0.3rem;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #1e293b;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 0.5rem;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 0.85rem;
+    font-weight: normal;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 480px) {
+    .header {
+      flex-direction: column;
+      gap: 0.5rem;
+      text-align: center;
+      padding: 1rem;
+    }
+    
+    .video-learning-section,
+    .quiz-section {
+      padding: 1rem;
+    }
+    
+    .question-card {
+      padding: 1rem;
+    }
+  }
+  /* Add these new styles to your existing CSS */
+
+.learning-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+}
+
+.module-description {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.text-content {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  line-height: 1.8;
+}
+
+.text-content p {
+  margin-bottom: 0.8rem;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.nav-button {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.prev-button {
+  background: #e2e8f0;
+  color: #4a5568;
+}
+
+.prev-button:hover:not(:disabled) {
+  background: #cbd5e0;
+}
+
+.next-button {
+  background: #4299e1;
+  color: white;
+}
+
+.next-button:hover:not(:disabled) {
+  background: #3182ce;
+}
+
+.nav-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.progress-indicator {
+  background: #edf2f7;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #000;
+}
+
+/* Enhance existing quiz styles */
+.quiz-section {
+  position: sticky;
+  top: 1rem;
+}
+
+.question-text {
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.score-display {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #66c2c4;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.try-again-btn {
+  background: #e2e8f0;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.2s;
+}
+
+.try-again-btn:hover {
+  background: #cbd5e0;
+}
