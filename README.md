@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# Bluetoe
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview
 
-## Available Scripts
+*Bluetoe* is an AI-powered learning platform focused on providing *quality, personalized education* to students in rural and underserved areas. It aims to bridge the gap between urban and rural education systems using AI to deliver tailored support, real-time feedback, and career guidance.
 
-In the project directory, you can run:
+### Key Features:
 
-### `npm start`
+- *AI Teacher* – Personalized AI tutor offering tailored lessons, doubt solving, and real-time feedback.
+- *AI Career Guidance* – Interest-based career test to suggest suitable paths.
+- *Assignments, Livebooks, Calendar & Chat* – Tools to support daily learning and engagement.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Website Link  
+[Visit Bluetoe](https://bluetoe-swarajya-coders.vercel.app/)<br>
+Sample login credentials<br>
+Email id:- some@google.com<br>
+password:- 12345678<br>
 
-### `npm test`
+## Demo Video Link  
+[Watch The Video](https://youtu.be/_PLrT0R7pQw)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## GitHub File Guide
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| File/Folder                           | Purpose                                                                 |
+|--------------------------------------|-------------------------------------------------------------------------|
+| src/pages/Ai_test/Ai_test.jsx      | Main component for the AI Career Test                                   |
+| src/pages/Ai_teacher/              | Modules and logic related to the AI Teacher feature                     |
+| src/Assignments/                   | Assignment-related components and logic                                 |
+| src/Calender/                      | Calendar functionality for planning and scheduling                      |
+| src/Chats/                         | Chat components for interaction (AI/Human)                              |
+| src/Home/                          | Homepage layout and navigation components                               |
+| src/Livebooks/                     | Interactive books/resources to support learning                         |
+| src/components/                    | Reusable UI components across the platform                              |
+| src/firebase/firebase.js           | Firebase configuration and backend setup                                |
+| App.js                             | Root component of the React app, includes routing                       |
+| App.css                            | Global styles for the app                                               |
+| index.js                           | Main entry point of the application                                     |
+| index.css                          | Global stylesheet                                                       |
+| App.test.js                        | Default test file                                                       |
+| setupTests.js                      | Test configuration/setup                                                |
+| reportWebVitals.js                 | Performance monitoring utility                                          |
+| logo.svg                           | App logo                                                                |
+| .gitignore                         | Git ignore configuration                                                |
+| package.json                       | Project metadata and dependencies                                       |
+| package-lock.json                  | Dependency lock file                                                    |
+| README.md                          | Project overview and usage documentation                                |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+> 🧭 Start by opening the homepage (src/Home/), then navigate to the AI Teacher and AI Test sections. Explore Livebooks and Assignments for learning, and use Calendar and Chat for planning and mentorship.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Features
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 1) 🧠 AI Teacher  
+- Personalized tutoring experience  
+- Real-time doubt solving  
+- Adaptive learning pace based on student's understanding  
+- Test-based feedback system for confidence building  
+- Customized course recommendations  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 2) 🧭 AI Career Guidance  
+- User-friendly interest-based questionnaire  
+- Suggests suitable career paths based on AI analysis  
+- Covers domains such as:  
+  - 🎮 Games: Only Minecraft, BGMI for now
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 3) 📅 Planner & Livebooks  
+- Structured roadmap toward chosen careers  
+- Reference YouTube videos and learning resources  
+- Progress-tracking and milestone planning  
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 4) 💬 Chat & Mentor Connect (Coming Soon)  
+- AI and Human mentor interactions via chat or Google Meet  
+- Career queries answered in real-time  
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Future Goals
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Integrate *LLaMA 3.0* to build our own custom career guidance model  
+- Introduce multilingual support to reach deeper rural regions  
+- Launch mobile app for offline and low-data accessibility  
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## How to Use
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Clone the repository:
+```bash
+git clone https://github.com/bhushanvs06/bluetoe.git
