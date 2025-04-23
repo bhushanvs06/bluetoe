@@ -19,12 +19,12 @@ function Auth({ onLogin }) {
       await setDoc(doc(db, "students", user.uid), {
         name,
         email,
-        profilePicture: "https://example.com/default-profile.jpg",
-        class: "",
+        profilePicture: "https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        class: "12",
         marks: {},
-        attendance: "",
-        sports: "",
-        overallGrowth: ""
+        attendance: "91",
+        sports: "89",
+        overallGrowth: "80"
       });
 
       onLogin(user, true);
