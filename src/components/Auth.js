@@ -51,20 +51,56 @@ function Auth({ onLogin }) {
     }
   };
 
+  const isEdge = navigator.userAgent.includes("Edg");
+
   return (
     <div className="auth-container">
+      {!isEdge && (
+        <p className="browser-warning">
+          ⚠️ This app only works properly on Microsoft Edge browser.
+        </p>
+      )}
+  
       <h2>{isNewUser ? "Sign Up" : "Login"}</h2>
-      {isNewUser && <input type="text" placeholder="Name" onChange={(e) => setName(e.target.value)} />}
-      <input type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
-      <input type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
-      <button onClick={isNewUser ? handleSignup : handleLogin}>{isNewUser ? "Sign Up" : "Login"}</button>
+  
+      {!isNewUser && (
+        <p className="login-message">
+          Welcome back! Please enter your email and password to continue.
+        </p>
+      )}
+  
+      {isNewUser && (
+        <input
+          type="text"
+          placeholder="Name"
+          onChange={(e) => setName(e.target.value)}
+        />
+      )}
+  
+      <input
+        type="email"
+        placeholder="Email"
+        onChange={(e) => setEmail(e.target.value)}
+      />
+      <input
+        type="password"
+        placeholder="Password"
+        onChange={(e) => setPassword(e.target.value)}
+      />
+  
+      <button onClick={isNewUser ? handleSignup : handleLogin}>
+        {isNewUser ? "Sign Up" : "Login"}
+      </button>
+  
       <p onClick={() => setIsNewUser(!isNewUser)}>
         {isNewUser ? "Already have an account? " : "New user? "}
         <span>{isNewUser ? "Login" : "Sign Up"}</span>
       </p>
+  
       {error && <p className="error">{error}</p>}
     </div>
   );
+  
 }
 
 export default Auth;
